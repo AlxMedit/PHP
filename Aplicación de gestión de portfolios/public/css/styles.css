@@ -1,0 +1,184 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contentIndex {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 20px;
+    height: 120px;
+}
+
+.usuariosContenido {
+    width: 90%;
+}
+
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contenidoUsuarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 6px rgba(157, 229, 253, 0.805) !important;
+}
+
+
+.formLogin h1,
+.registerForm h1 {
+    color: #212529;
+    text-align: center;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    width: 50%;
+}
+
+@keyframes salto {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-10px);
+        /* Salta hacia arriba */
+    }
+
+    50% {
+        transform: translateY(0);
+        /* Vuelve a la posición original */
+    }
+
+    70% {
+        transform: translateY(-5px);
+        /* Salto pequeño hacia arriba */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Vuelve a la posición original */
+    }
+}
+
+.botonInicioSesion {
+    transition: transform 0.3s ease-in-out;
+}
+
+.botonInicioSesion {
+    animation: salto 0.5s ease-in-out;
+}
+
+/* NUEVO */
+.btn-basic {
+    background-color: white !important;
+}
+
+.btn-basic:hover {
+    background-color: rgb(244, 244, 244) !important;
+}
+
+.logReg>a {
+    text-decoration: none;
+}
+
+.contentIndex>a>img {
+    width: 60px;
+}
+
+/* Formulario de login */
+
+.bodyColores {
+    height: 100vh;
+    background: linear-gradient(to top, #e7faff 50%, #daf6fd 90%) no-repeat
+}
+
+.formLogin {
+    margin: 0 auto;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 35%;
+    margin-top: 50px;
+    padding: 15px 30px 15px 30px;
+    min-height: 380px;
+    /* box-shadow: 10px 10px 80px rgb(161, 243, 255); */
+    box-shadow: 0 4px 15px 20px rgba(157, 229, 253, 0.805);
+    border-radius: 12px
+}
+
+.formLogin input[type="submit"],
+.registerForm input[type="submit"] {
+    border: 1px solid lightskyblue;
+    background-color: lightskyblue;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.registro {
+    text-decoration: none;
+    color: rgb(36, 171, 255);
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.clamp-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+}
+
+.contenidoPerfil:hover>div>h4 {
+    color: rgb(74, 129, 147);
+}   
+.contenidoPerfil:hover>div>h4>.vinculo {
+    color: rgb(74, 129, 147);
+}   
+.contenidoPerfil:hover>h4 {
+    color: rgb(74, 129, 147);
+}   
+
+.vinculo {
+    text-decoration: none;
+    color: black;
+}

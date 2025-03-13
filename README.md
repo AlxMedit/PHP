@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# PHP
+Repo para la gestión del módulo de DWES 2024-2025 IES GRAN CAPITAN - CÓRDOBA.
+
+Alejandro Vaquero Abad.
+>>>>>>> d73d956dfe1d816fdc2454dbef2af703c83c0f56
