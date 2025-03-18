@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Examen final Primer Trimestre - DWES
- * @author Alex Abad
- * @date 10/12/2024
- * @version 1.0
- */
 session_start();
 
 // Incluir configuraciones de cartas
@@ -74,7 +68,7 @@ echo "<p>Tienes un <strong>valor de cartas</strong> de: $valorUsuario</p><br>";
 
 // Decisión de la máquina: tomar o no una carta
 $valorMaquina = calcularValorCartas($_SESSION['cartasMaquina'], $asignarCartas, $valoresCartas);
-if (isset($_POST['pedirCarta'])) {
+if (isset($_POST['pedirCarta']) && !$lose) {
     $factorRiesgo = 17; // Umbral de riesgo de la máquina
     while ($valorMaquina < $factorRiesgo) {
         $_SESSION['cartasMaquina'][] = random_int(0, 51);
@@ -87,12 +81,18 @@ if (!$win && !$lose && !$draw) {
     echo "<p>La primera carta de la <strong>máquina</strong> es:</p>";
     echo "<img src='imgs/Playing-Cards/PNG-cards-1.3/{$asignarCartas[$_SESSION['cartasMaquina'][0]]}.png' alt='{$asignarCartas[$_SESSION['cartasMaquina'][0]]}' height='180'>";
     echo "<img src='imgs/Playing-Cards/PNG-cards-1.3/back.png' alt='back' height='180'>";
+
     echo "<p>Tienen un valor de {$valoresCartas[$asignarCartas[$_SESSION['cartasMaquina'][0]]]}</p>";
 }
 
 // Acción al plantarse
-if (isset($_POST['plantarse'])) {
-    if ($valorUsuario > $valorMaquina || $valorMaquina > 21) {
+if (isset($_POST['plantarse']) || $valorUsuario > 21) {
+    // Verificar el estado del juego
+    if ($valorUsuario > 21) {
+        $lose = true;
+    } elseif ($valorMaquina > 21) {
+        $win = true;
+    } elseif ($valorUsuario > $valorMaquina) {
         $win = true;
     } elseif ($valorUsuario == $valorMaquina) {
         $draw = true;
@@ -126,7 +126,6 @@ if ($win) {
     echo "</form>";
 }
 echo "</h2>";
-
 ?>
 
 <br><br>
