@@ -1,0 +1,46 @@
+/* Estilos generales */
+.navbar {
+    background-color: #2c3e50; /* Azul oscuro elegante */
+    padding: 12px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Lista de navegación */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilos de los enlaces */
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Efecto hover */
+  .nav-link:hover {
+    background-color: #34495e;
+    transform: scale(1.05);
+  }
+  
+  /* Estilo especial para el botón de logout */
+  .logout {
+    background-color: #e74c3c;
+    padding: 8px 14px;
+  }
+  
+  .logout:hover {
+    background-color: #c0392b;
+  }
+  

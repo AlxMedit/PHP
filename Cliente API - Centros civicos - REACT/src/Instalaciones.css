@@ -1,0 +1,180 @@
+/* Contenedor principal */
+.instalaciones-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Título principal */
+.instalaciones-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto hover en el título */
+.instalaciones-title:hover {
+  text-decoration: underline;
+}
+
+/* Campo de búsqueda */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto de foco en el campo de búsqueda */
+.search-input:focus {
+  border-color: #3498db;
+  box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Grid para organizar las instalaciones */
+.instalaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  justify-content: center;
+}
+
+/* Tarjeta de instalación */
+.instalacion-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Efecto hover en la tarjeta */
+.instalacion-card:hover {
+  transform: scale(1.03);
+}
+
+/* Contenido dentro de la tarjeta */
+.instalacion-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar el contenido */
+}
+
+/* Título dentro de la tarjeta */
+.instalacion-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #34495e;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto hover en el título de la tarjeta */
+.instalacion-card:hover .instalacion-title {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+/* Mensaje cuando no hay resultados */
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-top: 20px;
+}
+
+/* Contenedor del formulario de reserva */
+.reserva-form {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Título del formulario */
+.reserva-form h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Inputs del formulario */
+.reserva-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto de enfoque en inputs */
+.reserva-form input:focus {
+  border-color: #3498db;
+  box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Botón del formulario */
+.reserva-form button {
+  background: #3498db;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Efecto hover en el botón */
+.reserva-form button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Efecto click en el botón */
+.reserva-form button:active {
+  transform: scale(0.98);
+}
+
+/* Botón dentro de la tarjeta */
+.gestion-reserva-button {
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-top: auto;
+}
+
+/* Efecto hover en el botón de reserva */
+.gestion-reserva-button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
